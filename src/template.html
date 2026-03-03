@@ -3,9 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Battleship</title>
 </head>
 <body>
-    
+<div id="container">
+    <div id="own-table-container"></div>
+    <div id="enemy-table-container"></div>
+    <div id="side-panel">
+        <form id="place-ship-form">
+            <fieldset>
+                <legend>Inicio</legend>
+                <input type="number" name="startX" min="0" max="9" required>
+                <input type="number" name="startY" min="0" max="9" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Fin</legend>
+                <input type="number" name="endX" min="0" max="9" required>
+                <input type="number" name="endY" min="0" max="9" required>
+            </fieldset>
+
+            <button type="submit">Colocar barco</button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
